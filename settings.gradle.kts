@@ -16,5 +16,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "AndroidAcademyPractice"
-include(":app")
+include(":starter-pack")
  
