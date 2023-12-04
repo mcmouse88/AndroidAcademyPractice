@@ -1,5 +1,8 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":starter-pack-2")
+
+
 pluginManagement {
     repositories {
         google()

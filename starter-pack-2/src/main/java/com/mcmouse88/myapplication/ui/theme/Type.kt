@@ -1,4 +1,4 @@
-package com.mcmouse88.androidacademypractice.ui.theme
+package com.mcmouse88.myapplication.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
