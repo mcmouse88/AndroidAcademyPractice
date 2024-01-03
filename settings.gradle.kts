@@ -1,8 +1,5 @@
 @file:Suppress("UnstableApiUsage")
 
-include(":starter-pack-2")
-
-
 pluginManagement {
     repositories {
         google()
@@ -19,5 +16,9 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "AndroidAcademyPractice"
-include(":starter-pack")
+include(
+    ":starter-pack",
+    ":starter-pack-2",
+    ":animation"
+)
  
