@@ -5,11 +5,23 @@ targetSdk = "34"
 kotlinCompilerExtensionVersion ="1.5.4"
 
 kotlinVersion = "1.9.20"
+kspVersion = "1.9.20-1.0.14"
 lifecycleVersion = "2.6.2"
+hiltVersion = "2.48"
+coroutinesVersion = "1.7.3"
+retrofitVersion = "2.9.0"
+roomVersion = "2.6.1"
+agp = "8.1.1"
+appcompat = "1.6.1"
+material = "1.11.0"
 
 [plugins]
 android-application = { id = "com.android.application", version = "8.1.1" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinVersion" }
+google-dagger-hilt-android-gradle-plugin = { id = "com.google.dagger.hilt.android", version.ref = "hiltVersion" }
+google-devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "kspVersion" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+app-cach-paparazzi = { id = "app.cash.paparazzi", version = "1.3.1" }
 
 [libraries]
 # Core
@@ -26,6 +38,31 @@ androidx-compose-material = { group = "androidx.compose.material", name = "mater
 androidx-compose-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
 androidx-constraintlayout-compose = { module = "androidx.constraintlayout:constraintlayout-compose", version = "1.0.1" }
 
+#Retrofit
+squareup-retrofit2-retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofitVersion" }
+squareup-retrofit2-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofitVersion" }
+squareup-okhttp3-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version = "4.12.0" }
+
+# Kotlin Coroutines
+jetbrains-kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutinesVersion" }
+jetbrains-kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutinesVersion" }
+
+# Dagger Hilt
+google-dagger-hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltVersion" }
+google-dagger-hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltVersion" }
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version = "1.1.0" }
+
+# Android Lifecycle
+androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version = "2.6.2" }
+androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version = "2.6.2" }
+
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomVersion" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomVersion" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomVersion" }
+
+# Coil
+io-coil-kt-compose = { module = "io.coil-kt:coil-compose", version = "2.4.0" }
+
 # Testing
 junit = { module = "junit:junit", version = "4.13.2" }
 androidx-test-ext-junit = { module = "androidx.test.ext:junit", version = "1.1.5" }
@@ -36,6 +73,9 @@ androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-te
 androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 material3 = { group = "androidx.compose.material3", name = "material3" }
+jakewharton-timber = { module = "com.jakewharton.timber:timber", version = "5.0.1" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 [bundles]
 compose-core = [
