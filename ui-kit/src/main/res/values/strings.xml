@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="email_input_error">Invalid email</string>
+    <string name="password_input_error">Invalid password</string>
+    <string name="invalid_user_credentials">Invalid user credentials</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="email">E-Mail</string>
+    <string name="password">Password</string>
+    <string name="auth">Auth</string>
+    <string name="hide_password">Hide password</string>
+    <string name="show_password">Show password</string>
+</resources>
